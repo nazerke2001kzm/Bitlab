@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        alert("INSERT YOUR AMOUNT IN KZT: \n 1- CONVERT TO USD \n 2- CONVERT TO EUR \n 3- CONVERT TO GBP \n (Курсы валют: USD - 380KZT, EUR - 430KZT, GBP - 480KZT) ")
+        var money = parseInt(prompt("Money:"))
+        var rate = parseInt(prompt("Rate:"))
+        var returnmoney
+        var symbol
+        if(rate==1){
+            returnmoney=(money/380).toFixed(2)
+            symbol ="USD"
+        }else if(rate==2){
+            returnmoney = (money/430).toFixed(2)
+            symbol ="EUR"
+        }else{
+            returnmoney = (money/480).toFixed(2)
+            symbol ="GBP"
+        }
+        alert(`${money} KZT = ${returnmoney} ${symbol}`)
+    </script>
+</body>
+</html>

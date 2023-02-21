@@ -1,0 +1,87 @@
+body{
+    padding: 20px;
+}
+main{
+    display: flex;
+    flex-direction: row;
+}
+.block1{
+    width:18%;
+    padding: 20px;
+}
+.block2{
+    width: 50%;
+    padding: 20px;
+}
+.block3{
+    width: 30%;
+    padding: 20px;
+}
+header{
+    background-color: blue;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+li{
+    list-style-type: none;
+    padding: 10px;
+}
+img{
+    width: 100%;
+}
+input{
+    margin: 10px 0px;
+    padding: 5px;
+    width: 90%;
+}
+button{
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0px;
+    width: 40%;
+}
+span{
+    color: blue ;
+    font-weight: bold;
+}
+.block2 span{
+    color: black;
+    font-weight: bold;
+}
+h3{
+    color: blue;
+}
+p::first-letter{
+    font-size: 25px;
+}
+td{
+    padding: 5px;
+}
+tr:first-child{
+    background-color: black;
+    color: white;
+}
+tr{
+    background-color: green;
+    color: white;
+}
+tr:nth-child(n+3){
+    background-color: greenyellow;
+}
+tr:nth-child(n+5){
+    background-color: grey;
+}
+tr:nth-child(n+10){
+    background-color: palevioletred;
+}

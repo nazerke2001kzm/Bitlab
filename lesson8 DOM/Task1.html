@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            background-color: rgb(31, 113, 195);
+            color: white;
+            border: 1px black solid;
+        }
+        .error{
+            border: 2px red solid;
+        }
+    </style>
+</head>
+<body>
+    <form id="myform">
+        LOGIN: <input type="text" name="login" id="inputlogin" onfocus="callOnFocus()">
+        PASSwORD: <input type="text" name="password" id="inputpswrd" onfocus="callOnFocus()">
+        <button type="button" onclick = checkUser()>SIGN IN</button>
+    </form>
+    <script>
+        let userArray = [
+            {name: 'Ilyas', login: 'ileke', password: 'ileke123'},
+            {name: 'Aibek', login: 'aieke', password: 'aieke123'},
+            {name: 'Eldar', login: 'eleke', password: 'eleke123'}
+        ]
+        let user = myform.elements.login;
+        let userpassword = myform.elements.password;
+        function checkUser(){
+            let flag = false;
+            for(let u of userArray){
+                if(user.value==u.login && userpassword.value==u.password){
+                   flag = true;
+                }
+            }
+            if(!flag){
+                    inputlogin.classList.add('error');
+                    inputpswrd.classList.add('error');
+            }
+        }
+        function callOnFocus(){
+           inputlogin.classList.toggle('error');
+        }
+
+    </script>
+</body>
+</html>

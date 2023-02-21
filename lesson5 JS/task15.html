@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var money = parseInt(prompt("Money"))
+        var dollar = Math.trunc(money/380)
+        var cent = (money/380).toString().indexOf(".")
+        if(parseInt(cent)>0){
+            cent = (money/380).toString().substring(cent+1,cent+3);
+            alert(`${dollar} USD and ${cent} cent`)
+        }else{
+            alert(`ONLY ${dollar} USD`)
+        }
+    </script>
+</body>
+</html>

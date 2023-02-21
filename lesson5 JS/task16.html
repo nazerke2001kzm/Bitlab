@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var min = parseInt(prompt())
+        var hour = Math.trunc(min/60)
+        var minutes = min-hour*60
+        if(minutes>0){
+            alert(`${hour} HOURS and ${minutes} MINUTES`)
+        }else{
+            alert(`ONLY ${hour} HOURS`)
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            background-color: black;
+            color: white;
+            padding: 5px;
+        }
+        td{
+            padding: 5px;
+        }
+        input{
+            padding: 5px;
+            width: 200px;
+            margin-bottom: 15px;;
+            width: 100%;
+        }
+        select{
+            width: 150%;
+        }
+        .hour{
+            padding-left: 60px;
+        }
+        .time{
+            padding-left: 30px;
+        }
+        .timetext{
+            padding-left: 60px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <table>
+            <tbody>
+                <tr>
+                    <td colspan="4">Название фильма:</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td colspan="5"> <input type="text" placeholder="Название фильма"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td colspan="2">Кинотеатры:</td>
+                    <td></td>
+                    <td class="timetext"colspan="2">Время сеанса:</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td colspan="2" >
+                        <select>
+                            <option>Paramount City</option>
+                            <option>Chaplin Cinema</option>
+                            <option>Netflix</option>
+                        </select>
+                    </td>
+                    <td></td>
+                    <td class="hour">
+                        <select >
+                            <option>18</option>
+                            <option>19</option>
+                            <option>20</option>
+                            <option>21</option>
+                            <option>22</option>
+                            <option>23</option>
+                        </select>
+                    </td>
+                    <td  class="time">
+                        <select>
+                            <option>10</option>
+                            <option>20</option>
+                            <option>30</option>
+                            <option>40</option>
+                            <option>50</option>
+                            <option>5</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button>Поиск фильма</button>   
+                    </td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</body>
+</html>
